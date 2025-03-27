@@ -1,8 +1,8 @@
 import OpenAI from "openai";
 
+const api_key = process.env.API_KEY;
 const openai = new OpenAI({
-  // apiKey: "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",
-  apiKey: "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",
+  apiKey: api_key,
 });
 
 const vector_store_id = "vs_67e139cc15b48191a893fad88952080b";

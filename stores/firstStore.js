@@ -3,7 +3,7 @@ import OpenAI from "openai";
 console.log("process.env", process.env)
 const api_key = process.env.OPENAI_API_KEY;
 const openai = new OpenAI({
-  apiKey: api_key,
+  apiKey: api_key || "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",
 });
 
 const vector_store_id = "vs_67e139cc15b48191a893fad88952080b";
